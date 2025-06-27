@@ -62,7 +62,7 @@ export default function ContactSection() {
         ) : (
           <button
             type="submit"
-            className="mt-2 px-6 py-3 rounded-lg bg-accent-green text-black font-bold shadow-lg hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-green"
+             className="px-8 py-4 rounded-xl bg-accent-green text-white font-extrabold text-lg shadow-2xl shadow-accent-green/30 hover:scale-105 hover:shadow-accent-green/60 transition-all duration-200 ring-2 ring-accent-green focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-green animate-glow"
           >
             Envoyers
           </button>
