@@ -12,15 +12,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    // Prend le thème du système si pas défini
+    // Prend la préférence utilisateur OU force dark par défaut
     const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
     if (stored === "light" || stored === "dark") {
       setTheme(stored);
       document.documentElement.classList.toggle("dark", stored === "dark");
     } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(prefersDark ? "dark" : "light");
-      document.documentElement.classList.toggle("dark", prefersDark);
+      // FORCE dark par défaut
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
 

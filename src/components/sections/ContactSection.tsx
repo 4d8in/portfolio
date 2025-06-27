@@ -23,7 +23,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section className="max-w-2xl mx-auto py-16 px-4" id="contact">
+    <section className="max-w-3xl mx-auto py-16 px-4" id="contact">
       <motion.h2
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -32,7 +32,13 @@ export default function ContactSection() {
       >
         Me contacter
       </motion.h2>
-      <form onSubmit={handleSubmit} className="bg-background/80 border border-white/10 rounded-xl shadow-lg p-8 flex flex-col gap-4 mb-8">
+      <form
+        onSubmit={e => {
+          e.preventDefault();
+          window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=zer0@protonmail.com&su=Contact%20depuis%20portfolio&body=Nom:%20${encodeURIComponent(form.name)}%0AEmail:%20${encodeURIComponent(form.email)}%0AMessage:%20${encodeURIComponent(form.message)}`);
+        }}
+        className="bg-background/80 border border-white/10 rounded-xl shadow-lg p-8 flex flex-col gap-4 mb-8"
+      >
         <input
           type="text"
           name="name"
@@ -62,9 +68,9 @@ export default function ContactSection() {
         ) : (
           <button
             type="submit"
-             className="px-8 py-4 rounded-xl bg-accent-green text-white font-extrabold text-lg shadow-2xl shadow-accent-green/30 hover:scale-105 hover:shadow-accent-green/60 transition-all duration-200 ring-2 ring-accent-green focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-green animate-glow"
+            className="mt-2 px-6 py-3 rounded-lg bg-accent-green text-black font-bold shadow-lg hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-green"
           >
-            Envoyers
+            Envoyer
           </button>
         )}
       </form>

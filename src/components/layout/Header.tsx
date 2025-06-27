@@ -6,10 +6,11 @@ import { useState } from "react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const navLinks = [
-  { href: "#hero", label: "Accueil" },
-  { href: "#about", label: "À propos" },
-  { href: "#projects", label: "Projets" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Accueil" },
+  { href: "/about", label: "À propos" },
+  { href: "/skills", label: "Compétences" },
+  { href: "/projects", label: "Projets" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
