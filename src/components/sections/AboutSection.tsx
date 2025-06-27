@@ -39,7 +39,7 @@ export default function AboutSection() {
         {/* Timeline de parcours */}
         <div className="mt-6">
           <ol className="relative border-l-2 border-accent-green/60">
-            {timeline.map((item, idx) => (
+            {timeline.map((item) => (
               <li key={item.year} className="mb-6 ml-4">
                 <div className="absolute w-3 h-3 bg-accent-green rounded-full -left-1.5 border-2 border-background"></div>
                 <span className="text-accent-green font-bold">{item.year}</span>
