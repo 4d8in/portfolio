@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiNodedotjs, SiMongodb, SiPostgresql, SiExpress, SiGit, SiVercel, SiVscodium, SiNpm, SiYarn, SiWebpack, SiOwasp, SiLinux, SiMetasploit, SiBurpsuite } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiNodedotjs, SiMongodb, SiPostgresql, SiExpress, SiGit, SiVercel, SiVscodium, SiNpm, SiYarn, SiWebpack, SiOwasp, SiLinux, SiMetasploit, SiBurpsuite, SiPhp, SiPython, SiFlutter, SiKotlin } from "react-icons/si";
 import { FaLaptopCode } from "react-icons/fa";
 
 const frontend = [
@@ -11,10 +11,15 @@ const frontend = [
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "SASS", icon: SiSass },
   { name: "CSS3", icon: SiCss3 },
+  { name: "Flutter", icon: SiFlutter },
+  { name: "Kotlin", icon: SiKotlin },
   { name: "Responsive Design", icon: FaLaptopCode },
 ];
 const backend = [
   { name: "Node.js", icon: SiNodedotjs },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "PHP", icon: SiPhp },
+  { name: "Python", icon: SiPython },
   { name: "API REST", icon: FaLaptopCode },
   { name: "MongoDB", icon: SiMongodb },
   { name: "PostgreSQL", icon: SiPostgresql },
