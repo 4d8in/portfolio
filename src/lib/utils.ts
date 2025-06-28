@@ -17,7 +17,7 @@ export function getFocusableElements(container: HTMLElement) {
 }
 
 // Utilitaires de performance
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: unknown[]) => unknown>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {
@@ -28,7 +28,7 @@ export function debounce<T extends (...args: any[]) => any>(
   }
 }
 
-export function throttle<T extends (...args: any[]) => any>(
+export function throttle<T extends (...args: unknown[]) => unknown>(
   func: T,
   limit: number
 ): (...args: Parameters<T>) => void {
@@ -56,7 +56,7 @@ export function detectConnectionSpeed(): 'slow' | 'fast' {
   if (typeof navigator === 'undefined') return 'fast'
   
   // Type assertion pour navigator.connection (API expérimentale)
-  const connection = (navigator as any).connection
+  const connection = (navigator as Navigator & { connection?: { effectiveType?: string } }).connection
   if (!connection) return 'fast'
   
   const effectiveType = connection.effectiveType || '4g'
