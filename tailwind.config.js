@@ -170,4 +170,17 @@ module.exports = {
       addUtilities(newUtilities)
     }
   ],
+  safelist: [
+    'text-energy-orange', 'bg-energy-orange', 'border-energy-orange',
+    'text-trust-navy', 'bg-trust-navy', 'border-trust-navy',
+    'text-comfort-warm', 'bg-comfort-warm', 'border-comfort-warm',
+    'text-success-green', 'bg-success-green', 'border-success-green',
+    'text-focus-blue', 'bg-focus-blue', 'border-focus-blue',
+    'text-alert-amber', 'bg-alert-amber', 'border-alert-amber',
+    'text-on-dark', 'bg-on-dark', 'border-on-dark',
+    'text-on-light', 'bg-on-light', 'border-on-light',
+    'text-link-color', 'bg-link-color', 'border-link-color',
+    'text-visited-link', 'bg-visited-link', 'border-visited-link',
+    // Ajoute ici toutes les variantes dont tu as besoin
+  ],
 } 
