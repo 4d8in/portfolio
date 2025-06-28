@@ -70,9 +70,6 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            <li>
-              <ThemeToggle />
-            </li>
           </ul>
         )}
       </nav>
