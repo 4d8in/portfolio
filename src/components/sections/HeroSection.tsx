@@ -30,14 +30,14 @@ const HeroSection = () => {
         className="flex gap-6 justify-center"
       >
         <a
-          href="#projects"
+          href="#projects/page.tsx"
           className="px-8 py-4 rounded-xl bg-accent-green text-white font-extrabold text-lg shadow-2xl shadow-accent-green/30 hover:scale-105 hover:shadow-accent-green/60 transition-all duration-200 ring-2 ring-accent-green focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-green animate-glow"
           style={{ boxShadow: '0 0 24px #00FF88, 0 2px 8px #00FF88' }}
         >
           Voir mes projets
         </a>
         <a
-          href="#contact"
+          href="#contact/page.tsx"
           className="px-8 py-4 rounded-xl bg-accent-orange text-white font-extrabold text-lg shadow-2xl shadow-accent-orange/30 hover:scale-105 hover:shadow-accent-orange/60 transition-all duration-200 ring-2 ring-accent-orange focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-orange"
         >
           Me contacter
