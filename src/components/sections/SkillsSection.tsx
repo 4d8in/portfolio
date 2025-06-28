@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiNodedotjs, SiMongodb, SiPostgresql, SiExpress, SiGit, SiVercel, SiVscodium, SiNpm, SiYarn, SiWebpack, SiOwasp, SiLinux, SiMetasploit, SiBurpsuite, SiPhp, SiPython, SiFlutter, SiKotlin } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiNodedotjs, SiMongodb, SiPostgresql, SiExpress, SiGit, SiVercel, SiVscodium, SiNpm, SiYarn, SiWebpack, SiOwasp, SiLinux, SiMetasploit, SiBurpsuite, SiPhp, SiPython, SiFlutter, SiKotlin, SiDocker, SiJetbrains } from "react-icons/si";
 import { FaLaptopCode } from "react-icons/fa";
 
 const frontend = [
@@ -32,6 +32,8 @@ const outils = [
   { name: "yarn", icon: SiYarn },
   { name: "Webpack", icon: SiWebpack },
   { name: "Vercel", icon: SiVercel },
+  { name: "Docker", icon: SiDocker },
+  {name: "Jetbrains", icon: SiJetbrains},
 ];
 const pentest = [
   { name: "Reconnaissance & énumération (en formation)", icon: FaLaptopCode },
